@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+  background: url(./419518.png) repeat;
   background-color: rgb(255, 215, 166);
   position: relative;
 }
