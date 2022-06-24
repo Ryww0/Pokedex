@@ -26,4 +26,6 @@ function requestApi(url) {
       screenName.textContent = data.name;
       screenImg.style.backgroundImage = `url("${data.image}")`;
     });
+
+  screenNumbers.innerHTML = "";
 }
