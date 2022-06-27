@@ -125,7 +125,10 @@ button {
   margin-top: 50px;
   color: #fff;
   font-size: 2.5rem;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clavier {
   padding-top: 100px;
@@ -169,8 +172,11 @@ button {
   margin-top: 15px;
   border-radius: 15px;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .backBtn {
   width: 45%;
@@ -196,4 +202,28 @@ button {
 }
 .btn-sub:active {
   transform: translateY(0px);
+}
+
+.types {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+.type {
+  height: 80px;
+  width: 80px;
+  background: rgb(47, 47, 47);
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  margin-right: 15px;
+  border-radius: 50%;
+  border: solid 5px black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
