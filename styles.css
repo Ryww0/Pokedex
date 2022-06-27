@@ -10,6 +10,7 @@ body {
   justify-content: center;
   /* align-items: center; */
   background: url(./419518.png) repeat;
+  background-size: 10%;
   background-color: rgb(255, 215, 166);
   position: relative;
   font-family: "Rajdhani", sans-serif;
@@ -24,60 +25,59 @@ button {
 }
 .backL {
   background: rgb(129, 0, 0);
-  border-radius: 50px 300px 50px 300px;
+  border-radius: 25px 150px 25px 150px;
 }
 .backR {
   background: rgb(129, 0, 0);
-  border-radius: 300px 50px 300px 50px;
+  border-radius: 150px 25px 150px 25px;
 }
 .left-container {
   background-color: red;
-  height: 1500px;
-  width: 1000px;
-  border-radius: 50px 300px 50px 300px;
-  border: 5px solid rgb(53, 19, 19);
-  padding: 20px;
+  height: 750px;
+  width: 500px;
+  border-radius: 25px 150px 25px 150px;
+  border: 2.5px solid rgb(53, 19, 19);
+  padding: 10px;
   z-index: 1 !important;
-  transform: translate(-15px, -15px);
+  transform: translate(-7px, -7px);
 }
 .left-container2 {
   background-color: rgb(255, 36, 36);
   height: 100%;
   width: 100%;
-  border-radius: 50px 300px 50px 300px;
-  border: 5px solid rgb(53, 19, 19);
+  border-radius: 25px 150px 25px 150px;
+  border: 2.5px solid rgb(53, 19, 19);
   box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
 }
 .right-container {
   background-color: red;
-  height: 1500px;
-  width: 1000px;
-  border-radius: 300px 50px 300px 50px;
-  border: 5px solid rgb(53, 19, 19);
-  padding: 20px;
+  height: 750px;
+  width: 500px;
+  border-radius: 150px 25px 150px 25px;
+  border: 2.5px solid rgb(53, 19, 19);
+  padding: 10px;
   z-index: 1 !important;
-  transform: translate(-15px, -15px);
+  transform: translate(-7px, -7px);
   /* margin-left: 500px; */
 }
 .right-container2 {
   background-color: rgb(255, 36, 36);
   height: 100%;
   width: 100%;
-  border-radius: 300px 50px 300px 50px;
-  border: 5px solid rgb(53, 19, 19);
+  border-radius: 150px 25px 150px 25px;
+  border: 2.5px solid rgb(53, 19, 19);
   box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
 }
 .midpart {
   position: absolute;
-  left: 1865px;
-  top: 500px;
-  height: 850px;
-  width: 100px;
+  left: calc(50% - 30px);
+  top: calc(50% - 150px);
+  height: 450px;
+  width: 50px;
   background-color: red;
   border-radius: 50px;
-  border: solid black 5px;
+  border: solid black 2.5px;
   z-index: 1;
-  transform: translate(-15px, -15px);
 }
 .top,
 .bot {
@@ -87,74 +87,78 @@ button {
   height: 50%;
 }
 .top {
-  border-bottom: 5px solid #000;
+  border-bottom: 2.5px solid #000;
 }
 .bot {
-  border-top: 5px solid #000;
+  border-top: 2.5px solid #000;
 }
 .screen {
-  border: #000 solid 5px;
+  border: #000 solid 2.5px;
   box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
   margin: auto;
   background: rgb(47, 47, 47);
+  background-size: contain;
   width: 60%;
-  height: 500px;
+  height: 250px;
   margin-top: 150px;
-  border-radius: 15px 15px 15px 150px;
+  border-radius: 7px 7px 7px 75px;
   background-repeat: no-repeat;
   background-position: center;
 }
 .screen-description {
-  border: #000 solid 5px;
+  border: #000 solid 2.5px;
   box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
   margin: auto;
   background: rgb(47, 47, 47);
   width: 70%;
-  height: 300px;
-  margin-top: 150px;
-  border-radius: 15px;
+  height: 150px;
+  margin-top: 75px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px;
 }
 .screen-name {
   width: 60%;
-  height: 100px;
+  height: 50px;
   margin: auto;
   background: rgb(47, 47, 47);
   box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  border: #000 solid 5px;
-  border-radius: 15px;
-  margin-top: 50px;
+  border: #000 solid 2.5px;
+  border-radius: 7px;
+  margin-top: 25px;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .clavier {
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   margin: auto;
 }
 .backC {
-  width: calc(1 / 5 * 100% - 10px);
-  height: 100px;
+  width: calc(1 / 5 * 100% - 5px);
+  height: 50px;
   background-color: rgb(60, 98, 130);
-  margin: 5px;
-  border-radius: 5px;
+  margin: 2.5px;
+  border-radius: 2.5px;
 }
 .case {
-  border-radius: 5px;
+  border-radius: 2.5px;
   width: 100%;
   height: 100%;
   background-color: rgb(15, 147, 255);
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
 }
@@ -163,39 +167,39 @@ button {
 }
 
 .screen-nmbr {
-  border: #000 solid 5px;
+  border: #000 solid 2.5px;
   box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
   margin: auto;
   background: rgb(47, 47, 47);
   width: 45%;
-  height: 100px;
-  margin-top: 15px;
-  border-radius: 15px;
+  height: 50px;
+  margin-top: 7px;
+  border-radius: 7px;
   color: #fff;
   /* text-align: center; */
-  font-size: 3rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .backBtn {
   width: 45%;
-  height: 100px;
+  height: 50px;
   background-color: rgb(60, 98, 130);
-  margin-top: 15px;
-  border-radius: 5px;
+  margin-top: 7px;
+  border-radius: 2.5px;
 }
 .btn-sub {
-  border-radius: 5px;
+  border-radius: 2.5px;
   width: 100%;
   height: 100%;
   background-color: rgb(15, 147, 255);
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
   text-transform: uppercase;
@@ -207,22 +211,22 @@ button {
 .types {
   width: 100%;
   display: flex;
-  margin-top: 30px;
-  margin-left: 150px;
+  margin-top: 15px;
+  margin-left: 75px;
 }
 .type {
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
   background: rgb(47, 47, 47);
   box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  margin-right: 15px;
+  margin-right: 7px;
   border-radius: 50%;
-  border: solid 5px black;
+  border: solid 2.5px black;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
