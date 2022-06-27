@@ -6,7 +6,7 @@ const screenImg = document.querySelector(".screen");
 const t1 = document.getElementById("t1");
 const t2 = document.getElementById("t2");
 const description = document.querySelector(".screen-description");
-const imgZoom = document.querySelector(".zoom");
+const imgZoom = document.getElementById("zoom");
 
 //log variables
 // console.log(t1);
@@ -22,11 +22,11 @@ function addNmbr(el) {
 }
 
 // FIXME
-// submit.addEventListener("click", zoom);
+submit.addEventListener("click", zooom);
 
-// function zoom() {
-//   imgZoom.style.display = "block";
-// }
+function zooom() {
+  imgZoom.style.display = "block";
+}
 
 //appel de l'api
 submit.addEventListener("click", () => {

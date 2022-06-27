@@ -87,7 +87,7 @@ button {
   z-index: 2 !important;
   transform: translate(-7px, -7px);
 }
-.zoom {
+#zoom {
   display: none !important;
   background: #00000086;
   width: 100vw;
