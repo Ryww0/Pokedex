@@ -6,6 +6,7 @@ const screenImg = document.querySelector(".screen");
 const t1 = document.getElementById("t1");
 const t2 = document.getElementById("t2");
 const description = document.querySelector(".screen-description");
+const imgZoom = document.querySelector(".zoom");
 
 //log variables
 // console.log(t1);
@@ -19,6 +20,13 @@ function addNmbr(el) {
   screenNumbers.innerHTML =
     screenNumbers.textContent + btnNumbers[el].textContent;
 }
+
+// FIXME
+// submit.addEventListener("click", zoom);
+
+// function zoom() {
+//   imgZoom.style.display = "block";
+// }
 
 //appel de l'api
 submit.addEventListener("click", () => {
