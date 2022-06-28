@@ -29,6 +29,9 @@ button {
 .flex {
   display: flex;
 }
+.end {
+  justify-content: end;
+}
 .blue {
   width: 80px;
   height: 80px;
@@ -88,11 +91,12 @@ button {
   transform: translate(-7px, -7px);
 }
 #zoom {
-  display: none !important;
+  visibility: hidden;
+  display: none;
   background: #00000086;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   backdrop-filter: blur(4px);
   display: flex;
@@ -100,9 +104,13 @@ button {
   justify-content: center;
 }
 .bigger {
+  /* display: none; */
   width: 70%;
   height: 80%;
   /* background: #000; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .left-container2 {
   background-color: rgb(255, 36, 36);

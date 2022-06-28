@@ -7,6 +7,7 @@ const t1 = document.getElementById("t1");
 const t2 = document.getElementById("t2");
 const description = document.querySelector(".screen-description");
 const imgZoom = document.getElementById("zoom");
+const pokeZoom = document.querySelector(".bigger");
 
 //log variables
 // console.log(t1);
@@ -21,11 +22,14 @@ function addNmbr(el) {
     screenNumbers.textContent + btnNumbers[el].textContent;
 }
 
-// FIXME
-submit.addEventListener("click", zooom);
+screenImg.addEventListener("click", zooom);
+imgZoom.addEventListener("click", noZooom);
 
 function zooom() {
-  imgZoom.style.display = "block";
+  imgZoom.style.visibility = "visible";
+}
+function noZooom() {
+  imgZoom.style.visibility = "hidden";
 }
 
 //appel de l'api
@@ -48,6 +52,8 @@ function requestApi(url) {
       screenName.textContent = `#${data.id} - ${data.name}`;
       //image du pokemon
       screenImg.style.backgroundImage = `url("${data.image}")`;
+      pokeZoom.style.backgroundImage = `url("${data.image}")`;
+
       //type 1
       t1.style.backgroundImage = `url("${apiTypes1.image}")`;
       //type 2 avec vérification
