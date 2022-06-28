@@ -1,4 +1,4 @@
-# Pokedex
+# Pokédex (french/français)
 
 /// IN DEVELOPEMENT
 
