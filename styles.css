@@ -8,7 +8,6 @@
 body {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   background: url(./419518.png) repeat;
   background-size: 10%;
   background-color: rgb(255, 215, 166);
@@ -22,16 +21,250 @@ button {
   margin-top: 100px;
   display: flex;
 }
-.backL {
-  background: rgb(129, 0, 0);
-  border-radius: 25px 150px 25px 150px;
-}
 .flex {
   display: flex;
 }
 .end {
   justify-content: end;
 }
+
+/* BLOC POKÉDEX */
+/* ======================= */
+.backL {
+  background: rgb(129, 0, 0);
+  border-radius: 25px 150px 25px 150px;
+}
+.left-container {
+  background-color: red;
+  height: 750px;
+  width: 500px;
+  border-radius: 25px 150px 25px 150px;
+  border: 2.5px solid rgb(53, 19, 19);
+  padding: 10px;
+  z-index: 2 !important;
+  transform: translate(-7px, -7px);
+}
+.left-container2 {
+  background-color: rgb(255, 36, 36);
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 150px 25px 150px;
+  border: 2.5px solid rgb(53, 19, 19);
+  box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
+}
+.backR {
+  background: rgb(129, 0, 0);
+  border-radius: 150px 25px 150px 25px;
+}
+.right-container {
+  background-color: red;
+  height: 750px;
+  width: 500px;
+  border-radius: 150px 25px 150px 25px;
+  border: 2.5px solid rgb(53, 19, 19);
+  padding: 10px;
+  transform: translate(-7px, -7px);
+  /* margin-left: 500px; */
+}
+.right-container2 {
+  background-color: rgb(255, 36, 36);
+  height: 100%;
+  width: 100%;
+  border-radius: 150px 25px 150px 25px;
+  border: 2.5px solid rgb(53, 19, 19);
+  box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
+}
+.midpart {
+  position: absolute;
+  left: calc(50% - 30px);
+  top: calc(50% - 150px);
+  height: 450px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50px;
+  border: solid black 2.5px;
+}
+.top,
+.bot {
+  height: 24%;
+}
+.mid {
+  height: 50%;
+}
+.top {
+  border-bottom: 2.5px solid #000;
+}
+.bot {
+  border-top: 2.5px solid #000;
+}
+
+/* ELEMENTS INTÉRACTIFS */
+/* ======================= */
+.clavier {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+.backC {
+  width: calc(1 / 5 * 100% - 5px);
+  height: 50px;
+  background-color: rgb(60, 98, 130);
+  margin: 2.5px;
+  border-radius: 2.5px;
+}
+.case {
+  border-radius: 2.5px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 147, 255);
+  transform: translateY(-4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+.case:active {
+  transform: translateY(0px);
+}
+.backBtn {
+  width: 45%;
+  height: 50px;
+  background-color: rgb(60, 98, 130);
+  margin-top: 7px;
+  border-radius: 2.5px;
+}
+.btn-sub {
+  border-radius: 2.5px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 147, 255);
+  transform: translateY(-4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+.btn-sub:active {
+  transform: translateY(0px);
+}
+
+/* RETOUR DU PROGRAMME POUR L'UTILISATEUR */
+/* ======================= */
+.screen {
+  border: #000 solid 2.5px;
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  margin: auto;
+  background: rgb(47, 47, 47);
+  background-size: contain;
+  width: 60%;
+  height: 250px;
+  margin-top: 50px;
+  border-radius: 7px 7px 7px 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#zoom {
+  visibility: hidden;
+  display: none;
+  background: #00000086;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bigger {
+  /* display: none; */
+  width: 70%;
+  height: 80%;
+  /* background: #000; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.screen-name {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  background: rgb(47, 47, 47);
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  border: #000 solid 2.5px;
+  border-radius: 7px;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 1.25rem;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen-description {
+  border: #000 solid 2.5px;
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  margin: auto;
+  background: rgb(47, 47, 47);
+  width: 70%;
+  height: 150px;
+  margin-top: 75px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+}
+.screen-nmbr {
+  border: #000 solid 2.5px;
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  margin: auto;
+  background: rgb(47, 47, 47);
+  width: 45%;
+  height: 50px;
+  margin-top: 7px;
+  border-radius: 7px;
+  color: #fff;
+  /* text-align: center; */
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.types {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 75px;
+}
+.type {
+  height: 40px;
+  width: 40px;
+  background: rgb(47, 47, 47);
+  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
+  margin-right: 7px;
+  border-radius: 50%;
+  border: solid 2.5px black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ELEMENTS DU DÉCOR */
+/* ======================= */
 .blue {
   width: 80px;
   height: 80px;
@@ -75,228 +308,4 @@ button {
   margin-top: 80px;
   margin-left: 15px;
   border-radius: 50%;
-}
-.backR {
-  background: rgb(129, 0, 0);
-  border-radius: 150px 25px 150px 25px;
-}
-.left-container {
-  background-color: red;
-  height: 750px;
-  width: 500px;
-  border-radius: 25px 150px 25px 150px;
-  border: 2.5px solid rgb(53, 19, 19);
-  padding: 10px;
-  z-index: 2 !important;
-  transform: translate(-7px, -7px);
-}
-#zoom {
-  visibility: hidden;
-  display: none;
-  background: #00000086;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bigger {
-  /* display: none; */
-  width: 70%;
-  height: 80%;
-  /* background: #000; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.left-container2 {
-  background-color: rgb(255, 36, 36);
-  height: 100%;
-  width: 100%;
-  border-radius: 25px 150px 25px 150px;
-  border: 2.5px solid rgb(53, 19, 19);
-  box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
-}
-.right-container {
-  background-color: red;
-  height: 750px;
-  width: 500px;
-  border-radius: 150px 25px 150px 25px;
-  border: 2.5px solid rgb(53, 19, 19);
-  padding: 10px;
-  transform: translate(-7px, -7px);
-  /* margin-left: 500px; */
-}
-.right-container2 {
-  background-color: rgb(255, 36, 36);
-  height: 100%;
-  width: 100%;
-  border-radius: 150px 25px 150px 25px;
-  border: 2.5px solid rgb(53, 19, 19);
-  box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.4);
-}
-.midpart {
-  position: absolute;
-  left: calc(50% - 30px);
-  top: calc(50% - 150px);
-  height: 450px;
-  width: 50px;
-  background-color: red;
-  border-radius: 50px;
-  border: solid black 2.5px;
-}
-.top,
-.bot {
-  height: 24%;
-}
-.mid {
-  height: 50%;
-}
-.top {
-  border-bottom: 2.5px solid #000;
-}
-.bot {
-  border-top: 2.5px solid #000;
-}
-.screen {
-  border: #000 solid 2.5px;
-  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  margin: auto;
-  background: rgb(47, 47, 47);
-  background-size: contain;
-  width: 60%;
-  height: 250px;
-  margin-top: 50px;
-  border-radius: 7px 7px 7px 75px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.screen-description {
-  border: #000 solid 2.5px;
-  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  margin: auto;
-  background: rgb(47, 47, 47);
-  width: 70%;
-  height: 150px;
-  margin-top: 75px;
-  border-radius: 7px;
-  color: #fff;
-  font-size: 1rem;
-  padding: 5px;
-}
-.screen-name {
-  width: 60%;
-  height: 50px;
-  margin: auto;
-  background: rgb(47, 47, 47);
-  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  border: #000 solid 2.5px;
-  border-radius: 7px;
-  margin-top: 25px;
-  color: #fff;
-  font-size: 1.25rem;
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.clavier {
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: auto;
-}
-.backC {
-  width: calc(1 / 5 * 100% - 5px);
-  height: 50px;
-  background-color: rgb(60, 98, 130);
-  margin: 2.5px;
-  border-radius: 2.5px;
-}
-.case {
-  border-radius: 2.5px;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(15, 147, 255);
-  transform: translateY(-4px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border: none;
-}
-.case:active {
-  transform: translateY(0px);
-}
-
-.screen-nmbr {
-  border: #000 solid 2.5px;
-  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  margin: auto;
-  background: rgb(47, 47, 47);
-  width: 45%;
-  height: 50px;
-  margin-top: 7px;
-  border-radius: 7px;
-  color: #fff;
-  /* text-align: center; */
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.backBtn {
-  width: 45%;
-  height: 50px;
-  background-color: rgb(60, 98, 130);
-  margin-top: 7px;
-  border-radius: 2.5px;
-}
-.btn-sub {
-  border-radius: 2.5px;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(15, 147, 255);
-  transform: translateY(-4px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border: none;
-  text-transform: uppercase;
-}
-.btn-sub:active {
-  transform: translateY(0px);
-}
-
-.types {
-  width: 100%;
-  display: flex;
-  margin-top: 15px;
-  margin-left: 75px;
-}
-.type {
-  height: 40px;
-  width: 40px;
-  background: rgb(47, 47, 47);
-  box-shadow: inset 10px 10px 100px rgba(255, 255, 255, 0.1);
-  margin-right: 7px;
-  border-radius: 50%;
-  border: solid 2.5px black;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
